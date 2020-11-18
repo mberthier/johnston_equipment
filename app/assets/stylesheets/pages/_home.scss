@@ -1,1 +1,227 @@
 // Specific CSS for your home-page
+.banner {
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner h1 {
+  margin: 0 0 50px 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 64px;
+  font-weight: medium;
+}
+
+.banner p {
+  margin: 0 0 50px 0;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 24px;
+}
+
+.container-home {
+  text-align: center;
+}
+
+
+.categories-row {
+  margin: 12px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category-square {
+  background-size: cover;
+  width: 24%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  @media (min-width:0px) and (max-width:640px) {
+    width: 49%;
+    margin-bottom: 12px;
+  }
+}
+
+
+.usp {
+  margin: 150px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  @media (min-width:0px) and (max-width:640px) {
+    margin: 100px 0;
+  }
+}
+
+.usp-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 50%;
+  height: 100%;
+  @media (min-width:0px) and (max-width:992px) {
+    margin: 0 auto;
+    }
+}
+
+.usp-image{
+  width: 400px;
+  height: 230px;
+  background-size: cover;
+  filter: drop-shadow(60px -30px 0px rgba(180, 191, 198, 0.4));
+  @media (min-width:0px) and (max-width:992px) {
+    filter: none;
+   }
+
+}
+
+.usp-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  @media (min-width:0px) and (max-width:992px) {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+.content {
+ width: 100%;
+  @media (min-width:0px) and (max-width:992px) {
+    text-align: center;
+  }
+
+}
+
+.featured {
+  width: 100%;
+  height: 400px;
+  background-color: rgba(180, 191, 198, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h2 {
+    text-align: center;
+  }
+   @media (min-width:0px) and (max-width:992px) {
+    height: 800px;
+    justify-content: center;
+   }
+}
+
+.featured-item {
+  margin: 50px auto;
+  display: flex;
+  width: 750px;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  @media (min-width:0px) and (max-width:992px) {
+    flex-direction: column;
+    margin: 100px auto;
+    width: 100%;
+    height: 100%;
+  }
+  .featured-image {
+    height: 100%;
+    width: 40%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    flex: none;
+    @media (min-width:0px) and (max-width:992px) {
+     width: 100%;
+     height: 225px;
+    }
+  }
+  .content-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 24px;
+
+    @media (min-width:0px) and (max-width:992px) {
+      .title {
+        font-size: 24px;
+        margin-top: 16px;
+      }
+    }
+
+  }
+  .title {
+    font-size: 30px;
+    font-family: 'Roboto';
+  }
+  .price {
+    color: #4393C7;
+    font-family: 'Roboto';
+    font-size: 24px;
+  }
+}
+
+
+.testimonials {
+  background-color: white;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  h2 {
+    text-align: center;
+  }
+}
+
+.testimonial {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  p {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .avatar {
+    width: 60px;
+  }
+  .quote {
+    font-size: 24px;
+    font-family: 'Roboto';
+  }
+  .job {
+    font-size: 14px;
+    font-family: 'Roboto';
+  }
+}
+
+
+.parallax {
+  /* The image used */
+  background-image: url("https://images.unsplash.com/photo-1513646981453-ffb069114476?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80");
+
+  /* Full height */
+  height: 400px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
