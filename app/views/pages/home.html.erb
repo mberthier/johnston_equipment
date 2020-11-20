@@ -2,7 +2,9 @@
   <div class="container-home">
     <h1>Get back on the road</h1>
     <p>Cost-effective, used trucks & new heavy <br> trucks parts carefully selected</p>
-    <button type="button" class="btn btn-dark btn-lg">Discover Inventory</button>
+    <%= link_to inventory_path do %>
+      <button type="button" class="btn btn-dark btn-lg">Discover Inventory</button>
+    <% end %>
   </div>
 </div>
 
@@ -13,7 +15,7 @@
   <div class="category-square" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://cdn.pixabay.com/photo/2017/11/05/14/01/truck-2920533_960_720.jpg);">Attachments</div>
 </div>
 
-<div class="container">
+<div class="container mt-5">
   <div class="usp">
     <div class="usp-left">
       <div class="usp-image" style="background-image: url(https://images.unsplash.com/photo-1591768793355-74d04bb6608f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80)"></div>
@@ -111,5 +113,7 @@
 
 <div class="contact">
   <h2>Can’t find what you are looking for?</h2>
-  <button type="button" class="btn btn-dark btn-lg">Contact Us</button>
+  <%= link_to contact_path do %>
+    <button type="button" class="btn btn-dark btn-lg">Contact Us</button>
+  <% end %>
 </div>
