@@ -19,7 +19,7 @@ h2 {
 .banner h1 {
   margin: 0 0 50px 0;
   color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 64px;
   font-weight: medium;
   @media (min-width:0px) and (max-width:750px) {
@@ -52,6 +52,7 @@ h2 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 150px;
 }
 
 .category-square {
@@ -74,7 +75,7 @@ h2 {
 // Beginning of USPs section
 
 .usp {
-  margin: 150px 0;
+  margin: 0 0 150px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
