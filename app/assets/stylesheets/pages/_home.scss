@@ -5,6 +5,13 @@ h2 {
   }
 }
 
+
+a {
+  &:hover {
+    text-decoration: none;
+    color: black;
+  }
+}
 //Beginning of Top banner section
 
 .banner {
@@ -161,6 +168,8 @@ h2 {
 }
 
 .featured-item {
+
+  color: black;
   margin: 50px auto;
   display: flex;
   width: 750px;

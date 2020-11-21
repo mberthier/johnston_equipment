@@ -1,0 +1,132 @@
+.product {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  @media (min-width:0px) and (max-width:920px) {
+    flex-direction: column;
+  }
+}
+
+.product-left {
+  width: 50%;
+  @media (min-width:0px) and (max-width:920px) {
+    width: 100%;
+  }
+}
+
+.img-main {
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 24px;
+  &:hover {
+    cursor: pointer;
+  }
+  @media (min-width:0px) and (max-width:920px) {
+    width: 100%;
+  }
+}
+
+.img-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (min-width:0px) and (max-width:920px) {
+    display: none;
+  }
+}
+
+.img-sec {
+  height: 125px;
+  width: 175px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 50px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+
+.product-right {
+  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  flex-direction: column;
+  height: 500px;
+  @media (min-width:0px) and (max-width:920px) {
+    width: 100%;
+  }
+}
+
+.product-info {
+  .product-title {
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-weight: medium;
+  }
+  .product-tag {
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-weight: medium;
+  }
+  .product-tag {
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: regular;
+  }
+  .product-price {
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: regular;
+    color: #4393C7;
+  }
+}
+
+h3 {
+  margin: 50px 0 50px 0;
+  @media (min-width:0px) and (max-width:920px) {
+    text-align: center;
+  }
+}
+
+.inquire {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 70%;
+  .phone {
+    font-family: 'Roboto';
+    font-size: 22px;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+  @media (min-width:0px) and (max-width:920px) {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .phone {
+      margin-top: 25px;
+    }
+  }
+}
+
+.modal-image {
+  margin: 0 auto;
+  height: 500px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @media (min-width:0px) and (max-width:920px) {
+    height: 300px;
+  }
+}

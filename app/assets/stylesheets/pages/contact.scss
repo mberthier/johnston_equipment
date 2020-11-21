@@ -70,6 +70,10 @@
     display: flex;
     padding-left: 30px;
     align-items: center;
+    a {
+      text-decoration: none;
+      color: black;
+    }
   }
     @media (min-width:0px) and (max-width:920px) {
     margin: 0 auto;
