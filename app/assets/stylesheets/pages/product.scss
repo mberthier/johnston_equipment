@@ -27,6 +27,7 @@
   }
   @media (min-width:0px) and (max-width:920px) {
     width: 100%;
+    display: none;
   }
 }
 
@@ -128,5 +129,13 @@ h3 {
   background-position: center;
   @media (min-width:0px) and (max-width:920px) {
     height: 300px;
+  }
+}
+
+.carousel-mobile
+{
+  margin-bottom: 50px;
+  @media (min-width:920px) {
+    display: none;
   }
 }
