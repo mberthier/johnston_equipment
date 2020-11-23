@@ -7,6 +7,13 @@
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar-brand img {
+  width: 300px;
+  @media (min-width:0px) and (max-width:750px) {
+    width: 250px;
+  }
+}
+
+a.navbar-brand {
+  margin: 0px;
 }
