@@ -1,4 +1,5 @@
 class Item < ApplicationRecord
+  has_many_attached :photos
   belongs_to :category
   belongs_to :sub_category, optional: true
   validates :title, :description, :year, :price, :brand, :category, presence: true
