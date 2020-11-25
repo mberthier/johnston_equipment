@@ -1,0 +1,80 @@
+<div class="container">
+  <div class="product">
+    <div class="product-left">
+      <div class="carousel-mobile">
+        <div id="carouselExample1" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="modal-image" data-toggle="modal" data-target="#exampleModalCenter" style="background-image: url(https://images.pexels.com/photos/2523921/pexels-photo-2523921.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
+            </div>
+            <div class="carousel-item">
+              <div class="modal-image" data-toggle="modal" data-target="#exampleModalCenter" style="background-image: url(https://images.pexels.com/photos/2523921/pexels-photo-2523921.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
+            </div>
+            <div class="carousel-item">
+              <div class="modal-image" data-toggle="modal" data-target="#exampleModalCenter" style="background-image: url(https://images.pexels.com/photos/2523921/pexels-photo-2523921.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExample1" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExample1" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="img-main" data-toggle="modal" data-target=".bd-example-modal-lg" style="background-image: url(https://images.pexels.com/photos/2523921/pexels-photo-2523921.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
+      <div class="img-row">
+        <div class="img-sec" data-toggle="modal" data-target=".bd-example-modal-lg" style="background-image: url(https://images.pexels.com/photos/2523921/pexels-photo-2523921.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
+        <div class="img-sec" data-toggle="modal" data-target=".bd-example-modal-lg" style="background-image: url(https://images.pexels.com/photos/2523921/pexels-photo-2523921.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
+        <div class="img-sec" data-toggle="modal" data-target="#exampleModalCenter" style="background-image: url(https://images.pexels.com/photos/2523921/pexels-photo-2523921.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
+      </div>
+    </div>
+    <div class="product-right">
+      <div class="product-info">
+        <p class="product-title"><%="#{@item.year} #{@item.brand} #{@item.title}"%></p>
+        <% if  @item.sub_category %>
+          <p class="product-tag"><%= @item.sub_category.name%><i class="fas fa-tags" style="font-size: 16px; margin-left: 8px;"></i></p>
+        <% end %>
+        <p class="product-descritpion"><%= @item.description %></p>
+        <p class="product-price">$<%= @item.price %></p>
+      </div>
+      <div>
+        <h3>Inquire about this item</h3>
+        <div class="inquire">
+          <a class="btn btn-dark btn-lg" href="mailto:mja.berthier@gmail.com">Email us</a>
+          <div class="phone"><p><a href="tel:250-991-2830">(250) 991 2830</a></p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div id="carouselExample2" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="modal-image" data-toggle="modal" data-target="#exampleModalCenter" style="background-image: url(https://images.pexels.com/photos/2523921/pexels-photo-2523921.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="modal-image" data-toggle="modal" data-target="#exampleModalCenter" style="background-image: url(https://images.pexels.com/photos/2523921/pexels-photo-2523921.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="modal-image" data-toggle="modal" data-target="#exampleModalCenter" style="background-image: url(https://images.pexels.com/photos/2523921/pexels-photo-2523921.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample2" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample2" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

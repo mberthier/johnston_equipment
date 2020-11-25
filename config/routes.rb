@@ -6,4 +6,8 @@ Rails.application.routes.draw do
   get "contact", to: "pages#contact"
   get "inventory", to: "pages#inventory"
   get "product", to: "pages#product"
+
+  resources :items, only: [:index, :show]
+  resources :categories, only: [:index, :show]
+  resources :sub_categories, only: [:index, :show]
 end
