@@ -4,15 +4,17 @@
       <div class="carousel-mobile">
         <div id="carouselExample1" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="modal-image" data-toggle="modal" data-target="#exampleModalCenter" style="background-image: url(https://images.pexels.com/photos/2523921/pexels-photo-2523921.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
-            </div>
-            <div class="carousel-item">
-              <div class="modal-image" data-toggle="modal" data-target="#exampleModalCenter" style="background-image: url(https://images.pexels.com/photos/2523921/pexels-photo-2523921.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
-            </div>
-            <div class="carousel-item">
-              <div class="modal-image" data-toggle="modal" data-target="#exampleModalCenter" style="background-image: url(https://images.pexels.com/photos/2523921/pexels-photo-2523921.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
-            </div>
+            <% @item.photos.each_with_index do |photo, index| %>
+              <% if index == 0 %>
+                <div class="carousel-item active">
+                  <div class="modal-image" data-toggle="modal" data-target="#exampleModalCenter" style="background-image: url('<%= cl_image_path @item.photos[0].key %>')"></div>
+                </div>
+              <% else %>
+                <div class="carousel-item">
+                  <div class="modal-image" data-toggle="modal" data-target="#exampleModalCenter" style="background-image: url('<%= cl_image_path @item.photos[index].key %>')"></div>
+                </div>
+              <% end %>
+            <% end %>
           </div>
           <a class="carousel-control-prev" href="#carouselExample1" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -24,11 +26,11 @@
           </a>
         </div>
       </div>
-      <div class="img-main" data-toggle="modal" data-target=".bd-example-modal-lg" style="background-image: url(https://images.pexels.com/photos/2523921/pexels-photo-2523921.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
+      <div class="img-main" data-toggle="modal" data-target=".bd-example-modal-lg" style="background-image: url('<%= cl_image_path @item.photos[0].key %>')"></div>
       <div class="img-row">
-        <div class="img-sec" data-toggle="modal" data-target=".bd-example-modal-lg" style="background-image: url(https://images.pexels.com/photos/2523921/pexels-photo-2523921.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
-        <div class="img-sec" data-toggle="modal" data-target=".bd-example-modal-lg" style="background-image: url(https://images.pexels.com/photos/2523921/pexels-photo-2523921.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
-        <div class="img-sec" data-toggle="modal" data-target="#exampleModalCenter" style="background-image: url(https://images.pexels.com/photos/2523921/pexels-photo-2523921.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
+        <div class="img-sec" data-toggle="modal" data-target=".bd-example-modal-lg" style="background-image: url('<%= cl_image_path @item.photos[1].key %>')"></div>
+        <div class="img-sec" data-toggle="modal" data-target=".bd-example-modal-lg" style="background-image: url('<%= cl_image_path @item.photos[2].key %>')"></div>
+        <div class="img-sec" data-toggle="modal" data-target=".bd-example-modal-lg" style="background-image: url('<%= cl_image_path @item.photos[3].key %>')"></div>
       </div>
     </div>
     <div class="product-right">
@@ -56,15 +58,17 @@
     <div class="modal-content">
       <div id="carouselExample2" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="modal-image" data-toggle="modal" data-target="#exampleModalCenter" style="background-image: url(https://images.pexels.com/photos/2523921/pexels-photo-2523921.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
-          </div>
-          <div class="carousel-item">
-            <div class="modal-image" data-toggle="modal" data-target="#exampleModalCenter" style="background-image: url(https://images.pexels.com/photos/2523921/pexels-photo-2523921.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
-          </div>
-          <div class="carousel-item">
-            <div class="modal-image" data-toggle="modal" data-target="#exampleModalCenter" style="background-image: url(https://images.pexels.com/photos/2523921/pexels-photo-2523921.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
-          </div>
+          <% @item.photos.each_with_index do |photo, index| %>
+            <% if index == 0 %>
+              <div class="carousel-item active">
+                <div class="modal-image" data-toggle="modal" data-target="#exampleModalCenter" style="background-image: url('<%= cl_image_path @item.photos[0].key %>')"></div>
+              </div>
+            <% else %>
+              <div class="carousel-item">
+                <div class="modal-image" data-toggle="modal" data-target="#exampleModalCenter" style="background-image: url('<%= cl_image_path @item.photos[index].key %>')"></div>
+              </div>
+            <% end %>
+          <% end %>
         </div>
         <a class="carousel-control-prev" href="#carouselExample2" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
