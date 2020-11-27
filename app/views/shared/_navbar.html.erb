@@ -28,7 +28,15 @@
           </div>
         </li>
       <% else %>
-
+        <li class="nav-item active">
+          <%= link_to "Inventory", categories_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "About us", "about", class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Contact", "contact", class: "nav-link" %>
+        </li>
       <% end %>
     </ul>
   </div>

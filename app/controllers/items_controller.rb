@@ -6,4 +6,8 @@ class ItemsController < ApplicationController
   def show
     @item = Item.find(params[:id])
   end
+
+  def featured
+    @featured = Item.where(featured: true)
+  end
 end

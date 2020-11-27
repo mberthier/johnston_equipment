@@ -11,4 +11,6 @@ Rails.application.routes.draw do
   resources :items, only: [:index, :show]
   resources :categories, only: [:index, :show]
   resources :sub_categories, only: [:index, :show]
+
+  get "featured", to: "items#featured"
 end
