@@ -1,4 +1,4 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://cdn.pixabay.com/photo/2013/11/15/13/57/road-210913_960_720.jpg);">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://res.cloudinary.com/mberthier/image/upload/v1606660122/IMG_3661_bfvad7.jpg);">
   <div class="container-home">
     <h1>Get back on the road</h1>
     <p>Cost-effective, used trucks & new heavy <br> trucks parts carefully selected</p>
@@ -9,10 +9,30 @@
 </div>
 
 <div class="categories-row">
-  <div class="category-square" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://images.unsplash.com/photo-1590504805643-bb1f94cde7fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);">Trucks</div>
-  <div class="category-square" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://images.unsplash.com/photo-1429772011165-0c2e054367b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);">Parts</div>
-  <div class="category-square" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://images.pexels.com/photos/2523921/pexels-photo-2523921.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);">Equipment</div>
-  <div class="category-square" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://cdn.pixabay.com/photo/2017/11/05/14/01/truck-2920533_960_720.jpg);">Attachments</div>
+  <% trucks = Category.find_by(name: "Trucks")  %>
+    <div class="inventory-square" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('<%= cl_image_path trucks.photo.key %>')">
+      <%= link_to category_path(trucks.id) do %>
+        Trucks
+      <% end %>
+    </div>
+  <% equipment = Category.find_by(name: "Equipment")  %>
+    <div class="inventory-square" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('<%= cl_image_path equipment.photo.key %>')">
+      <%= link_to category_path(equipment.id) do %>
+        Equipment
+      <% end %>
+    </div>
+  <% parts = Category.find_by(name: "Parts")  %>
+    <div class="inventory-square" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('<%= cl_image_path parts.photo.key %>')">
+      <%= link_to category_path(parts.id) do %>
+        Parts
+      <% end %>
+    </div>
+  <% trailers = Category.find_by(name: "Trailers")  %>
+    <div class="inventory-square" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('<%= cl_image_path trailers.photo.key %>')">
+      <%= link_to category_path(trailers.id) do %>
+        Trailers
+      <% end %>
+    </div>
 </div>
 
 <div class="container mt-5">

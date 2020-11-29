@@ -58,7 +58,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .category-square {
@@ -288,7 +288,7 @@ a {
 
 .parallax {
   /* The image used */
-  background-image: url("https://images.unsplash.com/photo-1586191552066-d52dd1e3af86?ixlib=rb-1.2.1&auto=format&fit=crop&w=968&q=80");
+  background-image: url('https://res.cloudinary.com/mberthier/image/upload/v1606660367/IMG_2361_nvnzel.jpg');
 
   /* Full height */
   height: 400px;
