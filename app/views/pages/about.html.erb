@@ -5,10 +5,11 @@
   <div class="main">
     <div class="intro-left">
       <div class="content-start">
-        <h2>40 Years in the making</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h2>Over 40 years in the business</h2>
+        <p>Johnston Equipment started in 1979 in Quesnel, B.C. as a family owned and operated business and remains as such to this day.</p>
+        <p>For over 35 years, we specialized in dis-assembly of late model class eight trucks, providing high-quality used parts to dealers, fleets, insurance companies and end-users.</p>
+        <p>In 2015, we took the opportunity to pass on the used parts division of our company to Keith Mechanical Services. We now continue to sell heavy trucks, trailers, attachments, equipment, and new aftermarket parts to our valued customers, both within Canada and internationally.</p>
+        <p>To learn more about us or to inquire about any of our items for sale, get in touch today.</p>
       </div>
     </div>
     <div class="intro-right">
@@ -17,30 +18,29 @@
   </div>
 
   <div class="last-paragraph">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
   </div>
   <h2>Discover our inventory</h2>
   <div class="categories-row">
     <% trucks = Category.find_by(name: "Trucks")  %>
-      <div class="inventory-square" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('<%= cl_image_path trucks.photo.key %>')">
+      <div class="category-square" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('<%= cl_image_path trucks.photo.key %>')">
         <%= link_to category_path(trucks.id) do %>
           Trucks
         <% end %>
       </div>
     <% equipment = Category.find_by(name: "Equipment")  %>
-      <div class="inventory-square" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('<%= cl_image_path equipment.photo.key %>')">
+      <div class="category-square" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('<%= cl_image_path equipment.photo.key %>')">
         <%= link_to category_path(equipment.id) do %>
           Equipment
         <% end %>
       </div>
     <% parts = Category.find_by(name: "Parts")  %>
-      <div class="inventory-square" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('<%= cl_image_path parts.photo.key %>')">
+      <div class="category-square" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('<%= cl_image_path parts.photo.key %>')">
         <%= link_to category_path(parts.id) do %>
           Parts
         <% end %>
       </div>
     <% trailers = Category.find_by(name: "Trailers")  %>
-      <div class="inventory-square" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('<%= cl_image_path trailers.photo.key %>')">
+      <div class="category-square" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('<%= cl_image_path trailers.photo.key %>')">
         <%= link_to category_path(trailers.id) do %>
           Trailers
         <% end %>

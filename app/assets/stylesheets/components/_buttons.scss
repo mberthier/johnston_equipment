@@ -1,0 +1,12 @@
+.home-btn {
+    background: #abebd4;
+    color: #353535;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 2px;
+    &:hover {
+      background: #64e8b9;
+    }
+}
