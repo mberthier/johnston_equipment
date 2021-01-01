@@ -296,12 +296,14 @@ a {
 
   /* Full height */
   height: 400px;
-
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  @media (min-width:0px) and (max-width:750px) {
+      background-attachment: inherit;
+    }
 }
 
 // Beginning of Contact section

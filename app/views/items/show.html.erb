@@ -40,13 +40,13 @@
           <p class="product-tag"><%= @item.sub_category.name%><i class="fas fa-tags" style="font-size: 16px; margin-left: 8px;"></i></p>
         <% end %>
         <p class="product-descritpion"><%= @item.description %></p>
-        <p class="product-price">$<%= @item.price %></p>
+        <p class="product-price">$<%= @item.price.to_s.reverse.scan(/\d{3}|.+/).join(",").reverse %></p>
       </div>
       <div>
         <h3>Inquire about this item</h3>
         <div class="inquire">
           <a class="btn btn-dark btn-lg" href="mailto:mja.berthier@gmail.com">Email us</a>
-          <div class="phone"><p><a href="tel:250-991-2830">(250) 991 2830</a></p></div>
+          <div class="phone"><p><a href="tel:250-991-2830">(250) 991-2830</a></p></div>
         </div>
       </div>
     </div>
