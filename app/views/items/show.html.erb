@@ -27,19 +27,17 @@
         </div>
       </div>
       <div class="img-main" data-toggle="modal" data-target=".bd-example-modal-lg" style="background-image: url('<%= cl_image_path @item.photos[0].key %>')"></div>
-      <% if @item.photos.count > 2 %>
         <div class="img-row">
           <% if @item.photos.count >= 4 %>
             <div class="img-sec" data-toggle="modal" data-target=".bd-example-modal-lg" style="background-image: url('<%= cl_image_path @item.photos[1].key %>')"></div>
             <div class="img-sec" data-toggle="modal" data-target=".bd-example-modal-lg" style="background-image: url('<%= cl_image_path @item.photos[2].key %>')"></div>
             <div class="img-sec" data-toggle="modal" data-target=".bd-example-modal-lg" style="background-image: url('<%= cl_image_path @item.photos[3].key %>')"></div>
           <% else %>
-            <div class="img-sec" data-toggle="modal" data-target=".bd-example-modal-lg" style="background-image: url('<%= cl_image_path @item.photos[1].key %>')"></div>
-            <div class="img-sec" data-toggle="modal" data-target=".bd-example-modal-lg" style="background-image: url('<%= cl_image_path @item.photos[0].key %>')"></div>
-            <div class="img-sec" data-toggle="modal" data-target=".bd-example-modal-lg" style="background-image: url('<%= cl_image_path @item.photos[1].key %>')"></div>
+            <div class="img-sec" data-toggle="modal" data-target=".bd-example-modal-lg" style="background-image: url(https://res.cloudinary.com/mberthier/image/upload/v1614229357/pexels-pixabay-210881_1_k2zoju.jpg)"></div>
+            <div class="img-sec" data-toggle="modal" data-target=".bd-example-modal-lg" style="background-image: url(https://res.cloudinary.com/mberthier/image/upload/v1614229357/pexels-pixabay-210881_1_k2zoju.jpg)"></div>
+            <div class="img-sec" data-toggle="modal" data-target=".bd-example-modal-lg" style="background-image: url(https://res.cloudinary.com/mberthier/image/upload/v1614229357/pexels-pixabay-210881_1_k2zoju.jpg)"></div>
           <% end %>
         </div>
-      <% end %>
     </div>
     <div class="product-right">
       <div class="product-info">
