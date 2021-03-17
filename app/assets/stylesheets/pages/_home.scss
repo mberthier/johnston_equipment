@@ -269,7 +269,7 @@ a {
   height: 200px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
   p {
     margin-bottom: 0;
@@ -279,10 +279,13 @@ a {
     width: 60px;
   }
   .quote {
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'Roboto';
+    font-style: italic;
+    margin: 0 50px;
     @media (min-width:0px) and (max-width:750px) {
       font-size: 18px;
+      margin: 0;
     }
   }
   .job {
