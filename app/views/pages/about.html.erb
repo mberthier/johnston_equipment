@@ -17,8 +17,9 @@
   </div>
 
   <div class="last-paragraph">
-    <p>You can take a look at our selection of available inventory by following the links below. Otherwise, you can get in touch to inquire about items not listed on our website or simply to say hello.</p>
+    <p>You can take a look at our selection of available inventory by following the links below. Otherwise, you can <%= link_to "get in touch", contact_path %> to inquire about items not listed on our website or simply to say hello.</p>
   </div>
+
   <h2>Discover our inventory</h2>
   <div class="categories-row">
     <% trucks = Category.find_by(name: "Trucks")  %>

@@ -10,7 +10,7 @@
               <%= link_to item_path(item) do %>
                 <div class="featured-item">
                   <div class="featured-image" style="background-image: url('<%= cl_image_path item.photos[0].key %>')"></div>
-                  <div class="content-item">
+                  <div class="featured-content-item">
                     <p class="title"><%= "#{item.brand} #{item.title}" %></p>
                     <p class="description"><%= item.description %></p>
                     <p class="price">$<%= item.price.to_s.reverse.scan(/\d{3}|.+/).join(",").reverse %></p>
@@ -23,7 +23,7 @@
               <%= link_to item_path(item) do %>
                 <div class="featured-item">
                   <div class="featured-image" style="background-image: url('<%= cl_image_path item.photos[0].key %>')"></div>
-                  <div class="content-item">
+                  <div class="featured-content-item">
                     <p class="title"><%= "#{item.brand} #{item.title}" %></p>
                     <p class="description"><%= item.description %></p>
                     <p class="price">$<%= item.price.to_s.reverse.scan(/\d{3}|.+/).join(",").reverse %></p>
