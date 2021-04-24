@@ -23,7 +23,7 @@
   }
   @media (min-width:0px) and (max-width:640px) {
     width: 100%;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -119,18 +119,20 @@
   .title {
     margin-top: 8px;
     font-size: 24px;
-    font-family: 'Roboto';
+    font-family: 'Montserrat';
     padding-right: 16px;
+    font-weight: bold;
   }
   .price {
     color: #4393C7;
-    font-family: 'Roboto';
+    font-family: 'Montserrat';
     font-size: 24px;
+    font-weight: 500;
   }
 
   .description {
     padding-right: 24px;
-    font-family: 'Roboto';
+    font-family: 'Source Sans Pro';
     font-size: 16px;
   }
 }

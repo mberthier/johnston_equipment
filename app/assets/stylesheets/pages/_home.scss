@@ -7,6 +7,7 @@ h2 {
 
 
 a {
+  font-family: 'Source Sans Pro', sans-serif;
   &:hover {
     text-decoration: none;
     color: black;
@@ -73,6 +74,7 @@ a {
   border-radius: 4px;
   margin-bottom: 12px;
   transition: 0.3s;
+  font-family: 'Montserrat';
     &:hover {
     cursor: pointer;
     filter:brightness(1.3);
@@ -123,6 +125,7 @@ a {
   filter: drop-shadow(60px -30px 0px #d3dde4);
   border-radius: 4px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  background-position: center;
   @media (min-width:0px) and (max-width:992px) {
     filter: none;
    }
@@ -147,6 +150,7 @@ a {
     text-align: center;
   }
   h2 {
+    margin-bottom: 25px;
     @media (min-width:0px) and (max-width:992px) {
       margin-bottom: 2rem;
     }
@@ -238,12 +242,14 @@ a {
   }
   .title {
     font-size: 30px;
-    font-family: 'Roboto';
+    font-family: 'Montserrat';
+    font-weight: bold;
   }
   .price {
     color: #4393C7;
-    font-family: 'Roboto';
+    font-family: 'Montserrat';
     font-size: 24px;
+    font-weight: 500;;
   }
 }
 
@@ -266,7 +272,7 @@ a {
   width: 100%;
   height: 400px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   h2 {
@@ -293,7 +299,7 @@ a {
   }
   .quote {
     font-size: 20px;
-    font-family: 'Roboto';
+    font-family: 'Source Sans Pro';
     font-style: italic;
     margin: 0 50px;
     @media (min-width:0px) and (max-width:750px) {
@@ -303,7 +309,7 @@ a {
   }
   .job {
     font-size: 14px;
-    font-family: 'Roboto';
+    font-family: 'Source Sans Pro';
   }
 }
 

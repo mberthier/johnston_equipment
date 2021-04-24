@@ -48,11 +48,12 @@
         <p class="product-descritpion"><%= @item.description %></p>
         <p class="product-price">$<%= @item.price.to_s.reverse.scan(/\d{3}|.+/).join(",").reverse %></p>
       </div>
-      <div>
+      <div class="inquire">
         <h3>Inquire about this item</h3>
-        <div class="inquire">
-          <a class="btn btn-dark btn-lg" href="mailto:mja.berthier@gmail.com">Email us</a>
-          <div class="phone"><p><a href="tel:250-991-2830">(250) 991-2830</a></p></div>
+        <div class="inquire-cta">
+          <a class="btn btn-dark btn-lg btn-lg" style="width: 125px;" href="tel:250-991-2830">Call us</a>
+          <a class="btn btn-outline-dark btn-lg" style="width: 125px;" href="mailto:mja.berthier@gmail.com">Email us</a>
+<!--           <div class="phone"><p><a href="tel:250-991-2830">(250) 991-2830</a></p></div> -->
         </div>
       </div>
     </div>

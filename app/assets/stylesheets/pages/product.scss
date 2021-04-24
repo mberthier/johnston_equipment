@@ -60,10 +60,9 @@
   justify-content: flex-start;
   align-items: left;
   flex-direction: column;
-  height: 500px;
+  height: 100%;
   @media (min-width:0px) and (max-width:920px) {
     width: 100%;
-    margin-bottom: 25px;
   }
 }
 
@@ -74,60 +73,69 @@
     padding-left: 16px;
   }
   .product-title {
-    font-family: 'Roboto';
+    font-family: 'Montserrat';
     font-size: 30px;
-    font-weight: medium;
+    font-weight: bold;
   }
   .product-tag {
-    font-family: 'Roboto';
+    font-family: 'Montserrat';
     font-size: 22px;
     font-weight: medium;
   }
   .product-tag {
-    font-family: 'Roboto';
+    font-family: 'Montserrat';
     font-size: 18px;
     font-weight: regular;
   }
   .product-price {
-    font-family: 'Roboto';
+    font-family: 'Montserrat';
     font-size: 24px;
-    font-weight: regular;
     color: #4393C7;
-  }
-}
-
-h3 {
-  margin: 50px 0 50px 0;
-  @media (min-width:0px) and (max-width:920px) {
-    text-align: center;
+    font-weight: 500;
   }
 }
 
 .inquire {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  width: 70%;
-  .phone {
-    font-family: 'Roboto';
-    font-size: 22px;
-    a {
-      text-decoration: none;
-      color: black;
-    }
-  }
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 75%;
+  height: 100%;
+  margin-top: 50px;
+  min-height: 250px;
+  // .phone {
+  //   font-family: 'Montserrat';
+  //   font-size: 22px;
+  //   a {
+  //     text-decoration: none;
+  //     color: black;
+  //   }
+  // }
   @media (min-width:0px) and (max-width:920px) {
     width: 100%;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
     .phone {
-      margin: 25px 0;
+      margin-top: 25px;
       padding-bottom: 0;
       p {
         margin: 0;
       }
     }
+  }
+}
+
+.inquire-cta {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  justify-content: space-between;
+  @media (min-width:0px) and (max-width:920px) {
+    // flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 
