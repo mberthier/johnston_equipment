@@ -342,5 +342,10 @@ a {
   }
 }
 
+.btn-lg {
+  @media (min-width:0px) and (max-width:750px) {
+    min-width: 35%;
+  }
+}
 // End of Contact section
 
