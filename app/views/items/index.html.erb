@@ -9,7 +9,7 @@
         <div class="category-image" style="background-image: url('<%= cl_image_path item.photos.first.key %>')"></div>
         <div class="content-item">
           <p class="title"><%= "#{item.brand} #{item.title}" %></p>
-          <p class="description"><%= item.description %></p>
+          <p class="description"><%= item.description.truncate(115, separator: ' ',omission: '... (See More)') %></p>
           <p class="price">$<%= item.price.to_s.reverse.scan(/\d{3}|.+/).join(",").reverse %></p>
         </div>
       <% end %>
