@@ -46,7 +46,11 @@
           <p class="product-tag"><%= @item.sub_category.name%><i class="fa fa-tags" style="font-size: 16px; margin-left: 8px;"></i></p>
         <% end %>
         <p class="product-descritpion"><%= @item.description %></p>
-        <p class="product-price">$<%= @item.price.to_s.reverse.scan(/\d{3}|.+/).join(",").reverse %></p>
+        <% if  @item.price == 0 %>
+          <p class="product-price">Contact for pricing</p>
+        <% else %>
+          <p class="product-price">$<%= @item.price.to_s.reverse.scan(/\d{3}|.+/).join(",").reverse %></p>
+        <% end %>
       </div>
       <div class="inquire">
         <h3>Inquire about this item</h3>
