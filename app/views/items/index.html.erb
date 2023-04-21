@@ -10,7 +10,7 @@
         <div class="content-item">
           <p class="title"><%= "#{item.brand} #{item.title}" %></p>
           <p class="description"><%= item.description.truncate(115, separator: ' ',omission: '... (See More)') %></p>
-          <% if  @item.price == 0 %>
+          <% if item.price == 0 %>
             <p class="price">Contact for pricing</p>
           <% else %>
             <p class="price">$<%= item.price.to_s.reverse.scan(/\d{3}|.+/).join(",").reverse %></p>
