@@ -16,7 +16,11 @@
                     <% if item.description.length >= 115 %>
                       <p style="text-decoration: underline;">See More</p>
                     <% end %>
-                    <p class="price">$<%= item.price.to_s.reverse.scan(/\d{3}|.+/).join(",").reverse %></p>
+                    <% if  @item.price == 0 %>
+                      <p class="price">Contact for pricing</p>
+                    <% else %>
+                      <p class="price">$<%= item.price.to_s.reverse.scan(/\d{3}|.+/).join(",").reverse %></p>
+                    <% end %>
                   </div>
                 </div>
               <% end %>
@@ -29,7 +33,11 @@
                   <div class="featured-content-item">
                     <p class="title"><%= "#{item.brand} #{item.title}" %></p>
                     <p class="description"><%= item.description.truncate(115, separator: ' ',omission: '... (See More)') %></p>
-                    <p class="price">$<%= item.price.to_s.reverse.scan(/\d{3}|.+/).join(",").reverse %></p>
+                    <% if  @item.price == 0 %>
+                      <p class="price">Contact for pricing</p>
+                    <% else %>
+                      <p class="price">$<%= item.price.to_s.reverse.scan(/\d{3}|.+/).join(",").reverse %></p>
+                    <% end %>
                   </div>
                 </div>
               <% end %>
