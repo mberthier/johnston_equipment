@@ -43,7 +43,7 @@
       <div class="product-info">
         <p class="product-title"><%="#{@item.year} #{@item.brand} #{@item.title}"%></p>
         <% if  @item.sub_category %>
-          <p class="product-tag"><%= @item.sub_category.name%><i class="fas fa-tags" style="font-size: 16px; margin-left: 8px;"></i></p>
+          <p class="product-tag"><%= @item.sub_category.name%><i class="fa fa-tags" style="font-size: 16px; margin-left: 8px;"></i></p>
         <% end %>
         <p class="product-descritpion"><%= @item.description %></p>
         <p class="product-price">$<%= @item.price.to_s.reverse.scan(/\d{3}|.+/).join(",").reverse %></p>
